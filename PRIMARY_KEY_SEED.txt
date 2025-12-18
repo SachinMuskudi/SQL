@@ -1,0 +1,19 @@
+   1. Identity (seed,Increment)
+   ----------------------------
+      1. can only possible with Numerical columns 
+      2. The default seed value starts from 1 
+      
+      CREATE TABLE <TN> (<CN><DTYPE> IDENTITY)
+
+
+   2.PRIMATY KEY AND FORGEIN KEY 
+     ---------------------------
+     1. WE NEED TO HAVE 2 TABLES FOR SURE 
+     2. BOTH THE TABLES SHOULD HAVE ONE COMMON COLUMN AND COMMON DATA TYPE 
+     
+SYNTAX:
+     TABLE_1:
+     CREATE TABLE <TN> (<CN><DTYPE> PRIMARY,<CN><DTYPE>)
+     
+     TABLE_2:
+     CREATE TABLE <TN> (<CN><DTYPE>,...., <CN><DTYPE> FORGEIN KEY REFERENCE FROM <TN1><CN>

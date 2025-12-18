@@ -1,0 +1,45 @@
+
+
+1) What is the difference between Platform dependent and platform independent?
+   Platform Dependent 
+   ------------------
+             - Any Processor 
+             - But same OS (Operating)
+             - Ex: C Programming | SQL 
+
+   Platform Independent 
+   --------------------
+             - Any Processor 
+             - Any OS 
+             - Ex: Python | Java 
+
+Concepts in SQL 
+---------------
+- Introduction of SQL and Other concepts 
+- Installations (SQL Server | SSMS)
+- DDL Operations 
+- Data types and Memory Allocations 
+- DML Operations 
+- Identity (Seed / Increment) concept 
+- SQL Set concepts 
+- DQL Operations 
+- Revision 1
+- Level 1 Exam 
+- Primary Key and Forgein key concept 
+- Difference in Data Types (CHAR and VARCHAR)
+- TCL Operations 
+- Ranking concepts 
+- Clauses concept (Aggregations)
+- Revision 2
+- Level 2 Exam 
+- Database Installations (MySQL)
+- DB connections 
+- Python with MYSQL + SQL Connections 
+- Python with Redis Connections 
+- How Data Analyst will use the Connections in Real Applications 
+- How Data Science with GEN AI will use the Connections in Real Applications 
+- Final Revision 
+- Final Exam 
+
+
+   

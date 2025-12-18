@@ -1,0 +1,54 @@
+
+Identity (Seed Increment)
+-------------------------
+1. This concept is used to auto increment the values 
+2. This concept is only possible with Numerical columns 
+3. The Default Seed Value is 1
+
+when we create the table with Few columns we need to pass each column
+input without fail 
+
+If you dont want to pass input for any specific column | That column
+should be under the authority of **Identity**
+
+Since our Customer ID column is not under the authority of Identity Function 
+if we dont pass input SQL will throw an Error 
+
+While creating the table only we need to mention the Identity 
+
+SQL Set concept 
+---------------
+In SQL using set concept we can find the targeted data very easily 
+In this concept we have 4 functions 
+
+    Rules to Implement the concept 
+    ------------------------------
+    1. we need to have atleast 2 tables 
+    2. Each table should have same number of columns and data types 
+    3. to understand this concept clearlly Please maintain some common rows 
+
+Difference Between CUI and GUI 
+-------------------------------
+CUI (Command Line User Interface)
+GUI (Graphical User Interface)
+
+In Set Operators we have 4 functions 
+                 a) UNION = Is Used to Give the data (without repeating)
+                    syntax: SELECT *FROM <TN1>
+                            UNION
+                            SELECT *FROM <TN2>
+
+                 B) UNION_ALL = GETTING ALL THE DATA 
+                    syntax: SELECT *FROM <TN1>
+                            UNION_ALL
+                            SELECT *FROM <TN2>
+
+                 C) INTERSECT = COMMON DATA 
+                    syntax: SELECT *FROM <TN1>
+                            UNION_ALL
+                            SELECT *FROM <TN2>
+
+                 D) EXCEPT = ALL THE DATA FROM LEFT SIDE TABLE EXCEPT THE MATCHNG DATA FROM
+                             RIGHT SIDE TABLE 
+
+

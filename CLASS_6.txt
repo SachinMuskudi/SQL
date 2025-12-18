@@ -1,0 +1,73 @@
+
+
+DQL (Data Query Language) Operations
+====================================
+DQL Operations is used to work with Multiple Files 
+There are 3 types in DQL Operations 
+
+- Selection Method = In the table if we represent the selected columns using <CN>
+  SYNTAX: SELECT <CN1>,<CN2> FROM <TN>
+
+- Projection Method = In the table if we represent all the columns using (*) is known as 
+  Projection Method 
+  SYNTAX: SELECT *FROM <TN>
+
+
+- Joins:
+  ======
+Joins is a concept which is used to work with multiple table at the same time 
+
+Rules to Follow:
+----------------
+1. we need to have 2 tables for sure 
+2. we need to maintain same number of columns and there data types 
+3. we need to maintain only 1 common input in anyone of the column 
+4. comparision should be done with the common input columns only 
+
+
+Joins are 2 types 
+=================
+
+1. Ansi Joins 
+   ----------
+   - Ansi joins means which works with the **ON** condition 
+   - In Ansi Joins again we have 3 types 
+                 a) **Inner Join** = is used to find the common rows based on condition 
+                    SYNTAX: SELECT *FROM <TN1> <JOIN_CONDITION> <TN2> ON <TN1.CN> = <TN2.CN>
+
+                 b) Outer Join 
+                          I) Left outer Join = IS USED TO GET ALL DATA FROM LEFT SIDE TABLE 
+                                               BUT ONLY MATCHING DATA FROM RIGHT SIDE TABLE 
+                             SYNTAX: SELECT *FROM <TN1> <JOIN_CONDITION> <TN2> ON <TN1.CN> = <TN2.CN>
+
+
+                          II) Right outer Join = IS USED TO GET ALL DATA FROM RIGHT SIDE TABLE 
+                                               BUT ONLY MATCHING DATA FROM LEFT SIDE TABLE 
+                             SYNTAX: SELECT *FROM <TN1> <JOIN_CONDITION> <TN2> ON <TN1.CN> = <TN2.CN>
+
+
+                          III) Full outer Join = COMBINATION OF LEFT OUTER JOIN AND RIGHT OUTER JOIN 
+                            SYNTAX: SELECT *FROM <TN1> <JOIN_CONDITION> <TN2> ON <TN1.CN> = <TN2.CN>
+ 
+                 c) cross Join = IS USED TO CHECK 1 WITH ALL DATA POINTS 
+                              SYNTAX: SELECT *FROM <TN1> CROSS JOIN <TN2>
+                                      
+
+
+2. Non_Ansi Joins 
+   --------------
+   - Non_Ansi Joins means which works with **Where** Condition 
+   - In Non_Ansi Joins again we have 2 types 
+                 a) Equi Join = WORKS SAME LIKE INNER JOIN 
+                    IF WE USE ONLY (=) CONDITION THEN WE CAN CONSIDER AS EQUI JOIN | WE SHOULD NOT USE 
+                    >,<,>=,<=,!= 
+                    SYNTAX: SELECT *FROM <TN1>,<TN2> WHERE <TN1>.<CN> = <TN2>.<CN>
+
+                 b) Non_Equi Join = WILL WORK WITH OTHER OPERATORS (EXCEPT =)
+                    SYNTAX: SELECT *FROM <TN1>,<TN2> WHERE <TN1>.<CN> > <TN2>.<CN>
+
+
+
+
+
+

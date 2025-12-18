@@ -1,0 +1,51 @@
+SQL (Structured Query Language)
+===============================
+SQL is a language that is used to work with and manage data in a relational database. 
+It enables you to store data, fetch data, update and delete it quickly.
+
+Data Organization Hierarchy
+
+Database → A structured set of data held in a computer, especially one that is accessible in various ways.
+Example: A branch store with its customer and transaction data.
+
+Data Warehouse → A large database that serves as a central repository for all data aggregated from one or more (source) 
+databases or systems.
+Example: Data was aggregated from all branches of a bank to provide business insights.
+
+Data Center → It is a place where several data warehouses and servers are stored to manage, 
+process and store an organization’s large amounts of data.
+
+Key Concepts
+============
+
+Server:
+A server is a computer or device on a network that manages network resources.
+Example: A SQL server serving a number of databases for client-side access.
+
+Host:
+The term host can also be applied to the system or computer offering services or resources over a network. 
+It is specified by an IP or hostname.
+Example: For a website, the host is where the site’s files are stored and from which they are served to users.
+
+Port:
+A port is a logical gate for network connections, which are opened and closed. 
+It is useful for determining what kind of processes or services a server runs.
+Example: SQL Server on port 1433, HTTP on port 80.
+
+VPN (Virtual Private Network):
+A VPN establishes a secured, encrypted connection between your computer and other remote servers, 
+hiding your IP address to prevent potentially invasive tracking.
+Example: Businesses install VPNs so employees can connect securely to internal networks from the outside.
+
+Domain:
+A domain is a user-friendly naming system that allows humans to easily identify the location of specific websites 
+or services on the internet, rather than using their technical IP-based addresses.
+Example: www.viharatech.com
+ is a redirecting domain (that points to an IP of a server).
+
+ZeroTier Accounts:
+ZeroTier is a software-based virtual networking tool that lets you set up secure, 
+private networks across your devices and locations (e.g. VPN routing). 
+It's a neat little tool to provide remote access with an easy interface and without having to mess about with any of the 
+typical network stuff.
+Example: With ZeroTier, you could join your office and home systems as if they were on the same LAN.++

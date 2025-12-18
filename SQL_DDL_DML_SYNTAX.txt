@@ -1,0 +1,49 @@
+   SQL -> Structured Query Language 
+   ---------------------------------
+
+  ssms = sql server management studio 
+  
+  Using SSMS Platform we can develop 5 services 
+    1. DataBase Engine => Create the data in the form of tables 
+    2. SSAS [SQL Server Analysis Service] => understing data via EDA 
+    3. SSRS [SQL Server Reporting Service] => 2D to 3D 
+    4. SSIS [SQL Server Integrating Service] => connecting one DB with other DB 
+    5. Azure Microsoft CLoud Integration => cloud 
+
+  How to create the DB in the SSMS DataBase Engine Service 
+  syntax:  CREATE DATABASE <DBNAME>
+
+  ----------------------------------------------------------------
+  DDL [DATA DEFINITION LANGUAGE] OPERATIONS
+  -----------------------------------------------------------------
+  1. CREATE = TO CREATE THE TABLE 
+     SYNTAX: CREATE TABLE <TN> (<CN><DTYPE>)
+  2. ALTER 
+       a) ALTER IS USED TO CHANGE THE DATA TYPE OF THE COLUMN 
+          SYNTAX: ALTER TABLE <TN> ALTER COLUMN <CN> <NEWDTYPE>
+       B) ALTER IS USED TO ADD A NEW COLUMN 
+          SYNTAX: ALTER TABLE <TN> ADD <CNNAME><DTYPE>
+       C) ALTER CAN REMOVE A COLUMN ALSO 
+          SYNTAX: ALTER TABLE <TN> DROP COLUMN <CN>
+
+  3. SP_RENAME : IS USED TO CHANGE THE COLUMN NAME 
+          SYNTAX: SP_RENAME '<TN>.<OLDCN>','NEWCN'
+
+  4. TRUNCATE: WILL REMOVE ALL THE ROWS FROM THE TABLE 
+         SYNTAX: TRUNCATE TABLE <TN> -> TABLE WILL BE ALIVE 
+
+  5. DROP : COMPLETE TABLE WILL BE DELETED FORM DB 
+         SYNTAX: DROP TABLE <TN>
+
+  ----------------------------------------------------------------------
+  DML [DATA MANIPULATION LANGUAGE] OPERATIONS
+  -----------------------------------------------------------------------
+  1. INSERT 
+         SYNTAX: INSERT INTO <TN> VALUES (PASSVALUES)
+  2. UPDATE 
+         SYNTAX: UPDATE <TN> SET <CONDITION> WHERE <CONDITION>
+  3. DELETE: CAN REMOVE A SINGLE ROW
+             CAN REMOVE ALL THE ROWS IN THE TABLE BUT TABLE WILL BE ALIVE IN THE DATABASE 
+         SYNTAX: DELETE <TN> -> ALL ROWS WILL BE DELETED 
+                 DELETE <TN> WHERE <CONDITION> -> SINGLE ROW 
+  

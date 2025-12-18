@@ -1,0 +1,31 @@
+DQL Operations
+--------------
+RULES FOR JOINS CONCEPT:
+-------------------------
+  1. CREATE 2 TABLES NO OF ROWS AND NO OF COLUMNS SHOULD BE SAME 
+  2. COLUMN DATA TYPES SHOULD MATCH 
+  3. MAINTAIN SOME COMMON ROWS TO UNDERSTAND THE JOIN CONCEPT CLEARLLY [SINGLE INPUT MUST MATCH]
+
+
+PURPOSE OF JOINS:
+----------------
+WORKING WITH MORE THAN ONE TABLE 
+
+
+1. Projection Method 
+2. Selection Method 
+3. Joins 
+   --------
+   1. ANSI JOINS                2. NON-ANSI JOINS 
+   
+A) INNER JOINS                    A) EQUI-JOIN = 
+                                  B) NON-EQUI JOINS
+B) OUTER JOINS 
+      a) left outer join 
+      b) right outer join 
+      c) full outer join 
+C) CROSS JOIN 
+
+
+INNER JOIN SYNTAX:
+  SELECT *FROM <TN1> INNER JOIN <TN2> ON <TN1>.<CNAME> = <TN2>.<CNAME>

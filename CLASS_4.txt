@@ -1,0 +1,68 @@
+
+
+Function = means which is designed by the community to execute a given (or designed) task 
+
+DDL Operations
+--------------
+- DDL (Data Definition language)
+- Is a concept which is used to (work with DataBase)
+- Using DDL Operations we can 
+            - CREATE = is a technique which is used to create the table (xlsheet)
+              SYNTAX: CREATE TABLE <TN> (<CN><DTYPE>,<CN><DTYPE>,....)
+
+            - ALTER = ALTER IS USED TO DO MANIPULATIONS ON TABLE 
+                      ALTER IS CAPABLE OF DOING 3 TECHNIQUES 
+                      
+                      TECHNIQUE:1 = ALTER IS USED TO CHANGE THE DATA TYPE OF A COLUMN 
+                           SYNTAX = ALTER TABLE <TN> ALTER COLUMN <CN> <NEW DATA TYPE>
+
+                      TECHNIQUE:2 = ALTER IS USED TO ADD A NEW COLUMN 
+                           SYNTAX = ALTER TABLE <TN> ADD <CN> <DTYPE>
+
+                      TECHNIQUE:2 = ALTER IS USED TO REMOVE A COLUMN 
+                           SYNTAX = ALTER TABLE <TN> DROP COLUMN <CN> 
+
+              
+            - SP_RENAME = is a technique which is used to change the column name 
+                 SYNTAX = SP_RENAME '<OLDTN>.<OLDCN>','<NEWCN>'
+                           
+            - TRUNCATE = WE CAN REMOVE ALL THE ROWS FROM TABLE BUT TABLE IS ALIVE IN DATABASE 
+                SYNTAX = TRUNCATE TABLE <TN>
+
+            - DROP = WILL DELETE THE ENTIRE TABLE 
+                 SYNTAX: DROP TABLE <TN>
+
+
+
+DML (Data Manipulation Language)
+--------------------------------
+which is going to (add | update | delete) the Table 
+- In DML we have 3 techniques 
+               - Insert = IS USED TO ADD THE ROWS IN TO THE TABLE 
+                 SYNTAX: INSERT INTO <TN> VALUES (<VALUE1>,<VALUE2>,ETC....)
+
+
+               - Update = IS USED TO CHANGE THE EXISTING DATA WHEN WE NEEDED 
+                 SYNTAX = UPDATE <TN> SET <CONDITION> WHERE <CONDITION>
+
+               - Delete = DELETE IS USED TO DO 2 OPERATIONS 
+                          1. USING DELETE COMMAND WE CAN DELETE SINGLE ROW 
+                             SYNTAX: DELETE <TN> WHERE <CONDITION>
+                          2. USING DELETE COMMAND WE CAN DELETE ALL THE ROWS FROM THE TABLE 
+                             BUT TABLE IS ALIVE IN DATABASE 
+                             SYNTAX: DELETE <TN>
+ 
+
+DataTypes 
+---------
+- Data type is used to communicate with Software
+- They are 3 types of Data 
+            a) Integer (Whole Number) Ex: 12,250,756
+                    i) int (very small number to huge large number)
+                    ii) Tinyint (certain range of values)
+
+            b) float (Decimals Values) Ex: 12.5,56.66,756.0
+            c) String -> anything in between ' ' -> Ex: 'USA','usa12','1256' etc:
+                     i) CHAR (Memory Size)
+                     ii) Varchar (Memory Size)
+
