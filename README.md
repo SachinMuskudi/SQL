@@ -211,4 +211,97 @@ SELECT City FROM Table2;
 </ul>
 
 <h4>Foreign Key</h4>
-<p
+<pre><code>FOREIGN KEY (DeptID) REFERENCES Department(DeptID);
+</code></pre>
+
+<hr>
+
+<h2>1️⃣1️⃣ CHAR vs VARCHAR</h2>
+
+<table>
+<tr>
+  <th>CHAR</th>
+  <th>VARCHAR</th>
+</tr>
+<tr>
+  <td>Fixed length</td>
+  <td>Variable length</td>
+</tr>
+<tr>
+  <td>Consumes full memory</td>
+  <td>Saves memory</td>
+</tr>
+</table>
+
+<hr>
+
+<h2>1️⃣2️⃣ TCL (Transactions)</h2>
+
+<ul>
+  <li>COMMIT</li>
+  <li>ROLLBACK</li>
+  <li>SAVEPOINT</li>
+</ul>
+
+<pre><code>BEGIN TRANSACTION;
+UPDATE Employees SET Salary = 70000;
+ROLLBACK;
+</code></pre>
+
+<hr>
+
+<h2>1️⃣3️⃣ Ranking Functions</h2>
+
+<pre><code>SELECT Name, Salary,
+RANK() OVER (ORDER BY Salary DESC) AS Rank
+FROM Employees;
+</code></pre>
+
+<hr>
+
+<h2>1️⃣4️⃣ Clauses with Aggregations</h2>
+
+<pre><code>SELECT Department, COUNT(*)
+FROM Employees
+GROUP BY Department
+HAVING COUNT(*) > 2;
+</code></pre>
+
+<hr>
+
+<h2>1️⃣5️⃣ Python + MySQL</h2>
+
+<pre><code>import mysql.connector
+
+conn = mysql.connector.connect(
+  host="localhost",
+  user="root",
+  password="password",
+  database="CompanyDB"
+)
+
+cursor = conn.cursor()
+cursor.execute("SELECT * FROM Employees")
+</code></pre>
+
+<hr>
+
+<h2>1️⃣6️⃣ Python + Redis</h2>
+
+<pre><code>import redis
+
+r = redis.Redis(host='localhost', port=6379)
+r.set("name", "Sachin")
+print(r.get("name"))
+</code></pre>
+
+<hr>
+
+<h2>✅ Conclusion</h2>
+
+<p>
+This README covers SQL fundamentals, database design, transactions, ranking,
+and Python integration. Perfect for <b>students, freshers, and developers</b>.
+</p>
+
+<p align="center"><b>Happy Learning 🚀</b></p>
