@@ -1,21 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<body>
+<h1 align="center">🗄️ SQL – Complete Beginner to Intermediate Guide</h1>
 
-<h1>SQL – Complete Beginner to Intermediate Guide</h1>
+<p align="center">
+  <i>A structured, beginner-friendly SQL roadmap with definitions, syntax, examples, and Python integration.</i>
+</p>
 
 <hr>
 
-<h2>1. What is SQL?</h2>
+<h2>1️⃣ What is SQL?</h2>
+
 <p>
 SQL stands for <b>Structured Query Language</b>.  
-It is a standard language used to <b>store, retrieve, manipulate, and manage data</b> in relational databases.
+It is used to <b>store, retrieve, update, delete, and manage data</b> in relational databases.
 </p>
 
 <p>
-SQL works with data stored in <b>tables</b> (rows and columns).  
-Popular databases using SQL:
+SQL works with <b>tables</b> made of rows (records) and columns (fields).
 </p>
+
+<h3>Popular SQL Databases</h3>
 <ul>
   <li>MySQL</li>
   <li>SQL Server</li>
@@ -23,63 +25,56 @@ Popular databases using SQL:
   <li>Oracle</li>
 </ul>
 
-<p><b>Why SQL?</b></p>
+<h3>Why SQL?</h3>
 <ul>
-  <li>Easy to learn</li>
-  <li>Works with large data</li>
-  <li>Used in Data Analysis, Backend, AI & ML</li>
+  <li>Easy to learn and read</li>
+  <li>Handles large data efficiently</li>
+  <li>Used in Backend, Data Science, AI & Analytics</li>
 </ul>
 
 <hr>
 
-<h2>2. Installing SSMS & Basic Introduction</h2>
+<h2>2️⃣ Installing SSMS & Introduction</h2>
 
-<h3>SSMS (SQL Server Management Studio)</h3>
 <p>
-SSMS is a graphical tool used to <b>connect, write, execute, and manage SQL Server databases</b>.
+<b>SQL Server Management Studio (SSMS)</b> is a GUI tool used to write and execute SQL queries.
 </p>
 
 <h3>Installation Steps</h3>
 <ol>
-  <li>Download SSMS from Microsoft official site</li>
-  <li>Install SQL Server (Express / Developer edition)</li>
+  <li>Install SQL Server (Express / Developer)</li>
+  <li>Download SSMS from Microsoft website</li>
   <li>Install SSMS</li>
   <li>Open SSMS → Connect to Database Engine</li>
 </ol>
 
 <h3>SSMS Components</h3>
 <ul>
-  <li><b>Object Explorer</b> – shows databases, tables, views</li>
-  <li><b>Query Editor</b> – write SQL queries</li>
-  <li><b>Results Pane</b> – shows query output</li>
+  <li><b>Object Explorer</b> – databases & tables</li>
+  <li><b>Query Editor</b> – write SQL</li>
+  <li><b>Results Pane</b> – query output</li>
 </ul>
 
 <hr>
 
-<h2>3. Creating and Activating Database</h2>
+<h2>3️⃣ Creating and Using Database</h2>
 
-<h3>Create Database</h3>
-<pre>
-CREATE DATABASE CompanyDB;
-</pre>
+<h4>Create Database</h4>
+<pre><code>CREATE DATABASE CompanyDB;
+</code></pre>
 
-<h3>Activate (Use) Database</h3>
-<pre>
-USE CompanyDB;
-</pre>
+<h4>Use Database</h4>
+<pre><code>USE CompanyDB;
+</code></pre>
 
-<p>
-Only one database can be active at a time.
-</p>
+<p>Only one database can be active at a time.</p>
 
 <hr>
 
-<h2>4. DDL Operations (Data Definition Language)</h2>
-<p>
-DDL commands define or modify database structure.
-</p>
+<h2>4️⃣ DDL Operations (Data Definition Language)</h2>
 
-<h3>Common DDL Commands</h3>
+<p>DDL commands define or modify database structure.</p>
+
 <ul>
   <li>CREATE</li>
   <li>ALTER</li>
@@ -87,29 +82,27 @@ DDL commands define or modify database structure.
   <li>TRUNCATE</li>
 </ul>
 
-<h3>Examples</h3>
-
-<pre>
-CREATE TABLE Employees (
-  EmpID INT,
+<h4>Create Table</h4>
+<pre><code>CREATE TABLE Employees (
+  EmpID INT PRIMARY KEY,
   Name VARCHAR(50),
   Salary INT
 );
-</pre>
+</code></pre>
 
-<pre>
-ALTER TABLE Employees ADD Department VARCHAR(30);
-</pre>
+<h4>Alter Table</h4>
+<pre><code>ALTER TABLE Employees ADD Department VARCHAR(30);
+</code></pre>
 
-<pre>
-DROP TABLE Employees;
-</pre>
+<h4>Drop Table</h4>
+<pre><code>DROP TABLE Employees;
+</code></pre>
 
 <hr>
 
-<h2>5. Data Types and Memory Allocation</h2>
+<h2>5️⃣ Data Types & Memory Allocation</h2>
 
-<table border="1" cellpadding="5">
+<table>
 <tr>
   <th>Data Type</th>
   <th>Description</th>
@@ -127,12 +120,12 @@ DROP TABLE Employees;
 </tr>
 <tr>
   <td>CHAR(n)</td>
-  <td>Fixed length text</td>
+  <td>Fixed-length text</td>
   <td>n bytes</td>
 </tr>
 <tr>
   <td>VARCHAR(n)</td>
-  <td>Variable length text</td>
+  <td>Variable-length text</td>
   <td>Actual length</td>
 </tr>
 <tr>
@@ -142,18 +135,14 @@ DROP TABLE Employees;
 </tr>
 <tr>
   <td>DATE</td>
-  <td>Date values</td>
+  <td>Date</td>
   <td>3 bytes</td>
 </tr>
 </table>
 
 <hr>
 
-<h2>6. DML Operations (Data Manipulation Language)</h2>
-
-<p>
-DML commands manage data inside tables.
-</p>
+<h2>6️⃣ DML Operations (Data Manipulation Language)</h2>
 
 <ul>
   <li>INSERT</li>
@@ -161,50 +150,33 @@ DML commands manage data inside tables.
   <li>DELETE</li>
 </ul>
 
-<h3>Examples</h3>
+<pre><code>INSERT INTO Employees VALUES (1, 'John', 50000);
+</code></pre>
 
-<pre>
-INSERT INTO Employees VALUES (1, 'John', 50000);
-</pre>
+<pre><code>UPDATE Employees SET Salary = 60000 WHERE EmpID = 1;
+</code></pre>
 
-<pre>
-UPDATE Employees SET Salary = 60000 WHERE EmpID = 1;
-</pre>
-
-<pre>
-DELETE FROM Employees WHERE EmpID = 1;
-</pre>
+<pre><code>DELETE FROM Employees WHERE EmpID = 1;
+</code></pre>
 
 <hr>
 
-<h2>7. Identity (Seed & Increment) Concept</h2>
+<h2>7️⃣ Identity (Seed & Increment)</h2>
 
-<p>
-Identity column automatically generates numbers.
-</p>
-
-<pre>
-CREATE TABLE Users (
+<pre><code>CREATE TABLE Users (
   UserID INT IDENTITY(1,1),
   Name VARCHAR(50)
 );
-</pre>
+</code></pre>
 
-<p>
-Here:
-</p>
 <ul>
-  <li><b>Seed</b> = 1 (starting value)</li>
-  <li><b>Increment</b> = 1 (increase by 1)</li>
+  <li>Seed → Starting value</li>
+  <li>Increment → Step value</li>
 </ul>
 
 <hr>
 
-<h2>8. SQL Set Concepts</h2>
-
-<p>
-SQL supports set operations:
-</p>
+<h2>8️⃣ SQL Set Operators</h2>
 
 <ul>
   <li>UNION</li>
@@ -213,175 +185,30 @@ SQL supports set operations:
   <li>EXCEPT</li>
 </ul>
 
-<pre>
-SELECT City FROM Table1
+<pre><code>SELECT City FROM Table1
 UNION
 SELECT City FROM Table2;
-</pre>
+</code></pre>
 
 <hr>
 
-<h2>9. DQL Operations (Data Query Language)</h2>
+<h2>9️⃣ DQL (SELECT)</h2>
 
-<p>
-DQL is used to retrieve data.
-</p>
+<pre><code>SELECT * FROM Employees;
+</code></pre>
 
-<pre>
-SELECT * FROM Employees;
-</pre>
-
-<pre>
-SELECT Name, Salary FROM Employees WHERE Salary > 40000;
-</pre>
+<pre><code>SELECT Name, Salary FROM Employees WHERE Salary > 40000;
+</code></pre>
 
 <hr>
 
-<h2>10. Primary Key and Foreign Key</h2>
+<h2>🔟 Primary Key & Foreign Key</h2>
 
-<h3>Primary Key</h3>
+<h4>Primary Key</h4>
 <ul>
-  <li>Uniquely identifies a row</li>
-  <li>No NULL values</li>
+  <li>Unique</li>
+  <li>Not NULL</li>
 </ul>
 
-<pre>
-EmpID INT PRIMARY KEY
-</pre>
-
-<h3>Foreign Key</h3>
-<ul>
-  <li>References primary key of another table</li>
-</ul>
-
-<pre>
-DeptID INT,
-FOREIGN KEY (DeptID) REFERENCES Department(DeptID)
-</pre>
-
-<hr>
-
-<h2>11. Difference Between CHAR and VARCHAR</h2>
-
-<table border="1" cellpadding="5">
-<tr>
-  <th>CHAR</th>
-  <th>VARCHAR</th>
-</tr>
-<tr>
-  <td>Fixed length</td>
-  <td>Variable length</td>
-</tr>
-<tr>
-  <td>Consumes full memory</td>
-  <td>Saves memory</td>
-</tr>
-<tr>
-  <td>Faster for equal length data</td>
-  <td>Better for variable text</td>
-</tr>
-</table>
-
-<hr>
-
-<h2>12. TCL Operations (Transaction Control Language)</h2>
-
-<ul>
-  <li>COMMIT</li>
-  <li>ROLLBACK</li>
-  <li>SAVEPOINT</li>
-</ul>
-
-<pre>
-BEGIN TRANSACTION;
-UPDATE Employees SET Salary = 70000;
-ROLLBACK;
-</pre>
-
-<hr>
-
-<h2>13. Ranking Concepts</h2>
-
-<p>
-Ranking functions assign ranks to rows.
-</p>
-
-<ul>
-  <li>ROW_NUMBER()</li>
-  <li>RANK()</li>
-  <li>DENSE_RANK()</li>
-</ul>
-
-<pre>
-SELECT Name, Salary,
-RANK() OVER (ORDER BY Salary DESC) AS Rank
-FROM Employees;
-</pre>
-
-<hr>
-
-<h2>14. Clauses with Aggregations</h2>
-
-<h3>Clauses</h3>
-<ul>
-  <li>WHERE</li>
-  <li>GROUP BY</li>
-  <li>HAVING</li>
-  <li>ORDER BY</li>
-</ul>
-
-<pre>
-SELECT Department, COUNT(*) 
-FROM Employees
-GROUP BY Department
-HAVING COUNT(*) > 2;
-</pre>
-
-<hr>
-
-<h2>15. Python with MySQL + SQL Connection</h2>
-
-<p>
-Python connects to SQL databases using connectors.
-</p>
-
-<pre>
-import mysql.connector
-
-conn = mysql.connector.connect(
-  host="localhost",
-  user="root",
-  password="password",
-  database="CompanyDB"
-)
-
-cursor = conn.cursor()
-cursor.execute("SELECT * FROM Employees")
-</pre>
-
-<hr>
-
-<h2>16. Python with Redis Connection</h2>
-
-<p>
-Redis is an in-memory key-value database.
-</p>
-
-<pre>
-import redis
-
-r = redis.Redis(host='localhost', port=6379)
-r.set("name", "Sachin")
-print(r.get("name"))
-</pre>
-
-<hr>
-
-<h2>Conclusion</h2>
-<p>
-This guide covers SQL fundamentals, database operations, constraints, transactions, ranking, and Python integrations.
-It is ideal for beginners, backend developers, and data analysts.
-</p>
-
-</body>
-</html>
+<h4>Foreign Key</h4>
+<p
